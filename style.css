@@ -1,11 +1,11 @@
-
+/* Resetando margens e preenchimento */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* Estilo do corpo */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-
+/* Cabeçalho */
 header {
     background-color: #4CAF50;
     color: white;
@@ -49,7 +49,7 @@ section p {
     font-size: 1.2em;
 }
 
-
+/* Galeria de Imagens */
 .image-gallery {
     display: flex;
     justify-content: center;
@@ -58,7 +58,9 @@ section p {
 }
 
 .image-gallery .photo {
-    width: 45%;
+    width: 30%; /* Ajusta a largura das imagens para 30% da área disponível */
+    max-width: 300px; /* Limita o tamanho máximo das imagens para 300px */
+    height: auto; /* Mantém a proporção original da imagem */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
